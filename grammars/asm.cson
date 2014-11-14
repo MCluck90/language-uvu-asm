@@ -1,0 +1,55 @@
+'scopeName': 'source.asm'
+'fileTypes': [
+  'asm'
+]
+'name': 'UVU Assembly'
+'patterns': [
+  {
+    'name': 'meta.register.uvu'
+    'captures':
+      '1':
+        'name': 'support.constant.uvu'
+    'comment': 'matches registers'
+    'match': '\\b(R[1-9][0-9]+|R[0-9]|SP|SB|SL|FP|PC),?\\b'
+  }
+  {
+    'name': 'meta.command.uvu'
+    'captures':
+      '1':
+        'name': 'keyword.command.uvu'
+    'comment': 'matches commands (LDR, ADD, JMR, etc.)'
+    'match': '\\b(JMP|JMR|BNZ|BGT|BLT|BRZ|MOV|LDA|STR|LDR|STB|LDB|ADD|ADI|SUB|MUL|DIV|AND|OR|CMP|TRP)(?!:\\s*)\\b'
+  }
+  {
+    'name': 'meta.directive.uvu'
+    'captures':
+      '1':
+        'name': 'constant.directive.uvu'
+    'comment': 'matches directives'
+    'match': '(\\.INT|\\.BYT|\\.ALN)\\s+'
+  }
+  {
+    'name': 'meta.char.uvu'
+    'captures':
+      '1':
+        'name': 'string.single.uvu'
+    'comment': 'matches strings'
+    'match': '((\'[^ ]+\')|\' \')'
+  }
+  {
+    'name': 'meta.int.uvu'
+    'captures':
+      '1':
+        'name': 'constant.numeric.uvu'
+    'comment': 'matches integers'
+    'match': '\\b([0-9]+)\\s'
+  }
+  {
+    'name': 'meta.comment.uvu'
+    'captures':
+      '2':
+        'name': 'comment.line.uvu'
+    'comment': 'matches comments'
+    'match': '(?!\':\')(;.*$)'
+  }
+]
