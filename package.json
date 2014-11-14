@@ -1,13 +1,13 @@
 {
   "name": "language-uvu-asm",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "UVU CS Capstone Project language support in Atom",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/mcluck90/language-uvu-asm.git"
+    "type": "git",
+    "url": "https://github.com/mcluck90/language-uvu-asm.git"
   },
   "license": "MIT",
   "bugs": {
-      "url": "https://github.com/mcluck90/language-uvu-asm/issues"
+    "url": "https://github.com/mcluck90/language-uvu-asm/issues"
   }
 }
