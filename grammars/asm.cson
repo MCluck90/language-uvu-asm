@@ -18,7 +18,7 @@
       '1':
         'name': 'keyword.command.uvu'
     'comment': 'matches commands (LDR, ADD, JMR, etc.)'
-    'match': '\\b(JMP|JMR|BNZ|BGT|BLT|BRZ|MOV|LDA|STR|LDR|STB|LDB|ADD|ADI|SUB|MUL|DIV|AND|OR|CMP|TRP)(?!:\\s*)\\b'
+    'match': '\\b(JMP|JMR|BNZ|BGT|BLT|BRZ|MOV|LDA|STR|LDR|STB|LDB|ADD|ADI|SUB|MUL|DIV|AND|OR|CMP|TRP|RUN|LCK|ULK|BLK)(?!:\\s*)\\b'
   }
   {
     'name': 'meta.directive.uvu'
